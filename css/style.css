@@ -232,7 +232,7 @@ em{font-style:italic;color:var(--copper);font-weight:300}
 /* footer */
 .footer{background:var(--ink);padding:0 var(--pad) 40px;overflow:hidden}
 .footer__giant{font-family:var(--serif);font-size:clamp(80px,21vw,340px);line-height:.85;letter-spacing:-.05em;text-align:center;color:transparent;-webkit-text-stroke:1px rgba(193,119,76,.5);white-space:nowrap;padding:40px 0 30px}
-.footer__row{display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(242,227,213,.1);padding-top:30px}
+.footer__row{padding-right:80px;display:flex;justify-content:space-between;align-items:center;gap:20px;flex-wrap:wrap;border-top:1px solid rgba(242,227,213,.1);padding-top:30px}
 .footer__row img{height:42px;width:auto}
 .footer__small{font-size:12px;opacity:.5;text-align:right}
 .footer__small span{color:var(--copper)}

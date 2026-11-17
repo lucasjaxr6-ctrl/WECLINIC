@@ -85,11 +85,11 @@
   }
   function initParticles() {
     layout();
-    N = W < 860 ? 900 : 1900;
+    N = W < 860 ? 1100 : 2400;
     shapePts = SHAPES.map((s) => samplePoints(s.d, N));
     parts = Array.from({ length: N }, (_, i) => ({
       x: Math.random() * W, y: Math.random() * H, vx: 0, vy: 0,
-      s: Math.random() * 1.6 + 0.6, c: COLORS[i % COLORS.length], a: Math.random() * 0.6 + 0.4, ph: Math.random() * 6.28,
+      s: Math.random() * 2 + 1.1, c: COLORS[i % COLORS.length], a: Math.random() * 0.5 + 0.55, ph: Math.random() * 6.28,
     }));
   }
   function nextShape() {
