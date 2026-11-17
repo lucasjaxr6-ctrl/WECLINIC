@@ -3,267 +3,287 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>We Clinic · Odontologia e Estética em São Gonçalo</title>
-<meta name="description" content="We Clinic — implantes, reabilitação oral, clareamento, alinhadores e harmonização em São Gonçalo/RJ. Nota 5,0 no Google.">
-<meta name="theme-color" content="#1a1412">
+<title>We Clinic · Seu sorriso de volta, sem medo · São Gonçalo</title>
+<meta name="description" content="Implante, clareamento, alinhadores, harmonização e odontopediatria em São Gonçalo. Nota 5,0 no Google e as melhores condições de pagamento da região.">
+<meta name="theme-color" content="#fff6ee">
 <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&family=Manrope:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400..800&family=Caveat:wght@600;700&family=DM+Sans:opsz,wght@9..40,400..700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-<!-- PRELOADER -->
 <div class="loader" id="loader">
-  <div class="loader__mark">
-    <svg viewBox="0 0 200 240" class="loader__tooth"><path d="M100 20C60 5 20 20 22 70c2 40 23 55 28 90 5 40 8 70 22 72 16 2 16-47 28-62 12 15 12 64 28 62 14-2 17-32 22-72 5-35 26-50 28-90 2-50-38-65-78-50Z"/></svg>
-    <span class="loader__count" id="loaderCount">0</span>
+  <div class="loader__smile">
+    <svg viewBox="0 0 120 60"><path id="loaderPath" d="M10 10 Q60 70 110 10"/></svg>
   </div>
-  <p class="loader__tag">preparando o seu novo sorriso</p>
+  <p>abrindo um sorriso…</p>
 </div>
 
-<div class="cursor" id="cursor"><span></span></div>
-<div class="grain"></div>
+<!-- PROMO BAR -->
+<div class="promo">
+  <div class="promo__track">
+    <span>✨ Avaliação com especialista</span><span>💳 As melhores condições de pagamento da região</span><span>☕ Café quentinho te esperando</span><span>⭐ Nota 5,0 no Google</span><span>🧸 Atendemos crianças</span>
+    <span>✨ Avaliação com especialista</span><span>💳 As melhores condições de pagamento da região</span><span>☕ Café quentinho te esperando</span><span>⭐ Nota 5,0 no Google</span><span>🧸 Atendemos crianças</span>
+  </div>
+</div>
 
-<!-- NAV -->
 <header class="nav" id="nav">
-  <a href="#topo" class="nav__logo"><img src="assets/logo2.png" alt="We Clinic"></a>
+  <a href="#topo" class="nav__logo"><img src="assets/logo-dark.png" alt="We Clinic"></a>
   <nav class="nav__links">
-    <a href="#casos">Casos</a>
+    <a href="#quiz">Seu caso</a>
+    <a href="#antes-depois">Antes &amp; depois</a>
     <a href="#tratamentos">Tratamentos</a>
     <a href="#equipe">Equipe</a>
-    <a href="#clinica">Clínica</a>
-    <a href="#avaliacoes">Avaliações</a>
+    <a href="#duvidas">Dúvidas</a>
   </nav>
-  <a href="https://wa.me/5521997274701?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" rel="noopener" class="btn btn--copper magnetic" data-cursor="Agendar"><span>Agendar</span></a>
-  <button class="nav__burger" id="burger" aria-label="Menu"><i></i><i></i></button>
+  <a href="#" data-wa="Olá! Vim pelo site e quero agendar uma avaliação 😊" class="btn btn--dark magnetic wa-link"><span>Agendar</span><b>💬</b></a>
 </header>
-<div class="menu" id="menu">
-  <a href="#casos">Casos</a><a href="#tratamentos">Tratamentos</a><a href="#equipe">Equipe</a><a href="#clinica">Clínica</a><a href="#avaliacoes">Avaliações</a><a href="#agendar">Agendar</a>
-</div>
 
 <main id="topo">
 
 <!-- HERO -->
 <section class="hero">
-  <canvas id="particles" class="hero__canvas"></canvas>
-  <div class="hero__glow"></div>
-  <div class="hero__content">
-    <p class="eyebrow reveal-up"><span class="dot"></span> Odontologia &amp; Estética · São Gonçalo</p>
-    <h1 class="hero__title split">
-      Sorrisos que <em>mudam</em><br>a forma como você<br><em>se vê.</em>
+  <div class="hero__copy">
+    <p class="hero__hi reveal">Oi! 👋 Somos a We Clinic, em São Gonçalo</p>
+    <h1 class="hero__title">
+      <span class="line"><span>Seu sorriso</span></span>
+      <span class="line"><span>de volta.</span></span>
+      <span class="line"><span class="hl">Sem medo<svg viewBox="0 0 300 30" preserveAspectRatio="none" class="scribble"><path d="M4 20 C60 6 120 26 180 14 S270 8 296 16"/></svg></span><span>,</span></span>
+      <span class="line"><span>sem vergonha.</span></span>
     </h1>
-    <p class="hero__sub reveal-up">Implantes, reabilitação oral e estética do sorriso com uma equipe de especialistas formados na UFF e UERJ, num espaço pensado pra você se sentir em casa.</p>
-    <div class="hero__ctas reveal-up">
-      <a href="#agendar" class="btn btn--copper btn--lg magnetic"><span>Agendar avaliação</span><svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-      <a href="#casos" class="btn btn--ghost btn--lg"><span>Ver casos reais</span></a>
+    <p class="hero__sub reveal">Implante, clareamento, alinhadores e harmonização com quem entende de gente. Um lugar pra você se sentir em casa, do café da recepção até o espelho no final. 😁</p>
+    <div class="hero__ctas reveal">
+      <a href="#" data-wa="Olá! Vim pelo site e quero agendar minha avaliação 😊" class="btn btn--brand btn--lg magnetic wa-link confetti"><span>Quero agendar minha avaliação</span><b>→</b></a>
+      <a href="#antes-depois" class="btn btn--line btn--lg"><span>Ver antes &amp; depois</span></a>
+    </div>
+    <div class="proof reveal">
+      <div class="proof__faces"><i style="--c:#c1774c">W</i><i style="--c:#e8a27c">A</i><i style="--c:#7a5446">R</i><i style="--c:#d9a441">D</i></div>
+      <div><strong>★★★★★ 5,0</strong><span>+3.192 sorrisos transformados</span></div>
     </div>
   </div>
-  <div class="hero__badge reveal-up">
-    <div class="hero__stars">★★★★★</div>
-    <strong>5,0</strong>
-    <span>nota no Google</span>
-  </div>
-  <div class="hero__shape-label"><span id="shapeLabel">sorriso completo</span></div>
-  <div class="hero__scroll"><span>role</span><i></i></div>
-</section>
 
-<!-- MARQUEE -->
-<section class="marquee" aria-hidden="true">
-  <div class="marquee__track">
-    <span>Implantes dentários</span><b>✦</b><span>Reabilitação oral</span><b>✦</b><span>Overdenture</span><b>✦</b><span>Clareamento</span><b>✦</b><span>Alinhadores invisíveis</span><b>✦</b><span>Harmonização orofacial</span><b>✦</b><span>Odontopediatria</span><b>✦</b><span>Toxina botulínica</span><b>✦</b>
-    <span>Implantes dentários</span><b>✦</b><span>Reabilitação oral</span><b>✦</b><span>Overdenture</span><b>✦</b><span>Clareamento</span><b>✦</b><span>Alinhadores invisíveis</span><b>✦</b><span>Harmonização orofacial</span><b>✦</b><span>Odontopediatria</span><b>✦</b><span>Toxina botulínica</span><b>✦</b>
+  <div class="hero__art">
+    <div class="blob blob--a"></div>
+    <div class="blob blob--b"></div>
+    <div class="photo photo--main" data-depth="20"><img src="assets/ba-reabilitacao-depois.webp" alt="Sorriso após reabilitação na We Clinic"></div>
+    <div class="photo photo--kid" data-depth="40"><img src="assets/caso-odontopediatria.webp" alt="Paciente de odontopediatria sorrindo"></div>
+    <div class="photo photo--doc" data-depth="30"><img src="assets/equipe-nathale.webp" alt="Dra. Nathale Cruz"></div>
+    <div class="sticker sticker--1" data-depth="60">😁 <b>+3.192</b><small>sorrisos</small></div>
+    <div class="sticker sticker--2" data-depth="50">⭐ <b>5,0</b><small>no Google</small></div>
+    <div class="sticker sticker--3" data-depth="70">☕ café por nossa conta</div>
+    <p class="note note--hero" data-depth="35">esse sorriso foi feito aqui! <svg viewBox="0 0 80 50"><path d="M4 6 C30 0 60 10 70 40 M58 32 L70 42 L76 28"/></svg></p>
+    <span class="spark s1">✦</span><span class="spark s2">✦</span><span class="spark s3">✦</span>
   </div>
 </section>
 
-<!-- MANIFESTO -->
-<section class="manifesto">
-  <p class="manifesto__label">01 — por que a We</p>
-  <p class="manifesto__text" id="manifesto">Você já sentiu a frustração de esconder o sorriso por causa de um dente perdido? Aqui, cada paciente é tratado de forma única. O caminho para um sorriso completo e confiante começa com uma visita à We Clinic — com um sorriso sincero e um café quentinho te esperando.</p>
-</section>
-
-<!-- CASOS -->
-<section class="cases" id="casos">
-  <div class="cases__intro">
-    <p class="manifesto__label">02 — casos de sucesso</p>
-    <h2 class="section-title split">Resultados <em>reais</em>,<br>de pacientes reais.</h2>
-    <p class="cases__hint">arraste a página <span>→</span></p>
-  </div>
-  <div class="cases__track" id="casesTrack">
-    <article class="case"><div class="case__img"><img src="assets/caso-reabilitacao.webp" alt="Reabilitação oral antes e depois" loading="lazy"></div><div class="case__meta"><span>01</span><h3>Reabilitação oral</h3><p>Função e estética devolvidas ao sorriso completo.</p></div></article>
-    <article class="case"><div class="case__img"><img src="assets/caso-implante.webp" alt="Implante unitário antes e depois" loading="lazy"></div><div class="case__meta"><span>02</span><h3>Implante unitário</h3><p>O espaço vazio dá lugar a um dente fixo e natural.</p></div></article>
-    <article class="case"><div class="case__img"><img src="assets/caso-clareamento.webp" alt="Clareamento dental antes e depois" loading="lazy"></div><div class="case__meta"><span>03</span><h3>Clareamento dental</h3><p>No consultório ou caseiro, com acompanhamento.</p></div></article>
-    <article class="case"><div class="case__img"><img src="assets/caso-labial.webp" alt="Preenchimento labial antes e depois" loading="lazy"></div><div class="case__meta"><span>04</span><h3>Preenchimento labial</h3><p>Volume e contorno com naturalidade.</p></div></article>
-    <article class="case"><div class="case__img"><img src="assets/caso-bigode-chines.webp" alt="Preenchimento de bigode chinês antes e depois" loading="lazy"></div><div class="case__meta"><span>05</span><h3>Bigode chinês</h3><p>Suavização de sulcos para um rosto descansado.</p></div></article>
-    <article class="case"><div class="case__img"><img src="assets/caso-odontopediatria.webp" alt="Odontopediatria" loading="lazy"></div><div class="case__meta"><span>06</span><h3>Odontopediatria</h3><p>Cuidado leve e divertido para os pequenos.</p></div></article>
+<!-- WORD BAND -->
+<section class="band" aria-hidden="true">
+  <div class="band__track">
+    <span>Implante 🦷</span><span>Clareamento ✨</span><span>Alinhadores 😁</span><span>Harmonização 💋</span><span>Prótese 🙌</span><span>Odontopediatria 🧸</span><span>Canal sem drama 💆</span>
+    <span>Implante 🦷</span><span>Clareamento ✨</span><span>Alinhadores 😁</span><span>Harmonização 💋</span><span>Prótese 🙌</span><span>Odontopediatria 🧸</span><span>Canal sem drama 💆</span>
   </div>
 </section>
 
-<!-- IMPLANTE EXPLODIDO -->
-<section class="implant" id="implante">
-  <div class="implant__sticky">
-    <div class="implant__copy">
-      <p class="manifesto__label">03 — implante unitário</p>
-      <h2 class="section-title">Três peças.<br><em>Um sorriso inteiro.</em></h2>
-      <ol class="implant__steps">
-        <li data-step="0"><b>Coroa</b> em porcelana, feita na cor e no formato dos seus dentes.</li>
-        <li data-step="1"><b>Pilar</b> que conecta a coroa ao implante com precisão.</li>
-        <li data-step="2"><b>Implante de titânio</b> que se integra ao osso como uma raiz natural.</li>
-      </ol>
-      <p class="implant__by">Planejado pelo Dr. Guilherme Aguiar, especialista em Prótese e Implantodontia.</p>
+<!-- QUIZ -->
+<section class="quiz" id="quiz">
+  <div class="sec-head">
+    <span class="kicker">Vamos conversar?</span>
+    <h2 class="sec-title split">O que você quer <span class="hl2">mudar</span> no seu sorriso?</h2>
+    <p class="sec-sub">Toca numa opção e a gente te mostra o caminho. 👇</p>
+  </div>
+  <div class="quiz__chips" id="quizChips">
+    <button class="chip is-active" data-k="implante">🦷 Perdi um dente</button>
+    <button class="chip" data-k="clareamento">✨ Quero dentes mais brancos</button>
+    <button class="chip" data-k="alinhador">😁 Alinhar sem aparelho de ferro</button>
+    <button class="chip" data-k="protese">🙌 Preciso trocar a prótese</button>
+    <button class="chip" data-k="labios">💋 Lábios e rosto mais harmônicos</button>
+    <button class="chip" data-k="medo">😰 Tenho medo de dentista</button>
+    <button class="chip" data-k="kids">🧸 É pro meu filho(a)</button>
+  </div>
+  <div class="quiz__result" id="quizResult">
+    <div class="qr__img"><img id="qrImg" src="assets/equipe-guilherme.webp" alt=""></div>
+    <div class="qr__body">
+      <span class="qr__tag" id="qrTag">Implante dentário</span>
+      <h3 id="qrTitle">Um dente fixo de novo, com cara de dente seu.</h3>
+      <p id="qrText">O implante substitui a raiz e recebe uma coroa sob medida, na cor dos seus dentes. Nada de “janelinha” no sorriso nem prótese que solta.</p>
+      <p class="qr__who"><span id="qrWho">Quem cuida: Dr. Guilherme Aguiar · Prótese e Implantodontia</span></p>
+      <a href="#" id="qrBtn" data-wa="Olá! Perdi um dente e quero saber sobre implante 🦷" class="btn btn--brand magnetic wa-link confetti"><span id="qrBtnTxt">Quero saber do meu implante</span><b>💬</b></a>
     </div>
-    <div class="implant__stage">
-      <svg viewBox="0 -90 400 740" class="implant__svg" id="implantSvg">
-        <defs>
-          <linearGradient id="gCrown" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fffaf3"/><stop offset=".55" stop-color="#f1e4d4"/><stop offset="1" stop-color="#d9c1a5"/></linearGradient>
-          <linearGradient id="gTi" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#6d6a68"/><stop offset=".35" stop-color="#d9d6d2"/><stop offset=".6" stop-color="#9b9893"/><stop offset="1" stop-color="#55524f"/></linearGradient>
-          <linearGradient id="gGum" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d98c7a"/><stop offset="1" stop-color="#b8665a"/></linearGradient>
-          <linearGradient id="gBone" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#efe2cf"/><stop offset="1" stop-color="#d8c3a6"/></linearGradient>
-          <filter id="soft"><feGaussianBlur stdDeviation="14"/></filter>
-        </defs>
-        <ellipse cx="200" cy="560" rx="150" ry="18" fill="#000" opacity=".25" filter="url(#soft)" class="ip-shadow"/>
-        <g class="ip-tissue">
-          <path d="M40 250 Q200 225 360 250 Q372 400 350 560 Q200 600 50 560 Q28 400 40 250Z" fill="url(#gBone)" opacity=".28"/>
-          <path d="M40 250 Q200 225 360 250 Q362 275 361 300 Q200 280 39 300 Q38 275 40 250Z" fill="url(#gGum)" opacity=".6"/>
-        </g>
-        <g class="ip-screw">
-          <path d="M162 300 H238 L232 520 Q200 560 168 520Z" fill="url(#gTi)"/>
-          <g stroke="#3b3836" stroke-width="5" stroke-linecap="round" opacity=".55">
-            <path d="M160 325 L240 315"/><path d="M161 355 L239 345"/><path d="M162 385 L238 375"/><path d="M163 415 L237 405"/><path d="M164 445 L236 435"/><path d="M166 475 L234 465"/><path d="M169 505 L231 495"/>
-          </g>
-          <path d="M186 300 V520" stroke="#fff" stroke-width="6" opacity=".25"/>
-        </g>
-        <g class="ip-abut">
-          <path d="M172 210 H228 L236 292 H164Z" fill="url(#gTi)"/>
-          <rect x="160" y="290" width="80" height="12" rx="3" fill="#8d8a86"/>
-          <path d="M190 212 V290" stroke="#fff" stroke-width="5" opacity=".3"/>
-        </g>
-        <g class="ip-crown">
-          <path d="M200 40C150 22 105 40 108 92c2 34 16 60 26 92 10 30 30 40 66 40s56-10 66-40c10-32 24-58 26-92 3-52-42-70-92-52Z" fill="url(#gCrown)"/>
-          <path d="M140 70c10-18 32-24 46-18" stroke="#fff" stroke-width="9" stroke-linecap="round" fill="none" opacity=".9"/>
-          <path d="M200 40c-10 22-10 40 0 58" stroke="#d6bea2" stroke-width="3" fill="none" opacity=".6"/>
-        </g>
-        <g class="ip-labels" font-family="Manrope" font-size="15" fill="#f2e3d5">
-          <g class="ip-l ip-l0"><line x1="300" y1="110" x2="360" y2="110" stroke="#c1774c" stroke-width="2"/><circle cx="300" cy="110" r="5" fill="#c1774c"/><text x="300" y="96">coroa</text></g>
-          <g class="ip-l ip-l1"><line x1="245" y1="250" x2="360" y2="250" stroke="#c1774c" stroke-width="2"/><circle cx="245" cy="250" r="5" fill="#c1774c"/><text x="300" y="236">pilar</text></g>
-          <g class="ip-l ip-l2"><line x1="245" y1="420" x2="360" y2="420" stroke="#c1774c" stroke-width="2"/><circle cx="245" cy="420" r="5" fill="#c1774c"/><text x="280" y="406">titânio</text></g>
-        </g>
-      </svg>
-      <div class="implant__ring"></div>
+  </div>
+</section>
+
+<!-- ANTES E DEPOIS -->
+<section class="ba" id="antes-depois">
+  <div class="sec-head sec-head--light">
+    <span class="kicker">Casos reais da We</span>
+    <h2 class="sec-title split">Arrasta e vê a <span class="hl2">mágica</span> acontecer.</h2>
+  </div>
+  <div class="ba__wrap">
+    <div class="ba__tabs" id="baTabs">
+      <button class="is-active" data-i="0">Reabilitação oral</button>
+      <button data-i="1">Implante unitário</button>
+      <button data-i="2">Preenchimento labial</button>
+      <button data-i="3">Bigode chinês</button>
     </div>
+    <div class="compare" id="compare">
+      <img class="compare__after" id="cmpAfter" src="assets/ba-reabilitacao-depois.webp" alt="Depois">
+      <div class="compare__before" id="cmpBeforeWrap"><img id="cmpBefore" src="assets/ba-reabilitacao-antes.webp" alt="Antes"></div>
+      <span class="compare__lbl compare__lbl--a">antes</span>
+      <span class="compare__lbl compare__lbl--b">depois</span>
+      <div class="compare__handle" id="cmpHandle"><span>↔</span></div>
+      <p class="note note--ba">arrasta aqui!</p>
+    </div>
+  </div>
+  <div class="ba__more">
+    <figure class="ba__card"><img src="assets/caso-clareamento.webp" alt="Clareamento antes e depois" loading="lazy"><figcaption>Clareamento ✨</figcaption></figure>
+    <figure class="ba__card"><img src="assets/caso-odontopediatria.webp" alt="Odontopediatria" loading="lazy"><figcaption>Odontopediatria 🧸</figcaption></figure>
+    <figure class="ba__card"><img src="assets/caso-labial.webp" alt="Preenchimento labial" loading="lazy"><figcaption>Lábios 💋</figcaption></figure>
+  </div>
+</section>
+
+<!-- MEDO -->
+<section class="fear">
+  <div class="fear__copy">
+    <span class="kicker">Medo de dentista?</span>
+    <h2 class="sec-title split">A gente <span class="hl2">entende</span>. E cuida disso também.</h2>
+    <blockquote class="bigquote">
+      <p>“Sempre tive muito medo de dentista, cheguei muito nervoso e me trataram da melhor forma possível…”</p>
+      <cite>Renato Marins · avaliação 5★ no Google</cite>
+    </blockquote>
+    <ul class="fear__list">
+      <li><b>🗣️</b><div><strong>Explicamos tudo antes</strong><span>Você entende cada etapa e decide junto.</span></div></li>
+      <li><b>🐢</b><div><strong>No seu tempo</strong><span>Sem correria, com pausas quando precisar.</span></div></li>
+      <li><b>🛋️</b><div><strong>Clima de casa</strong><span>Espaço confortável e equipe acolhedora.</span></div></li>
+      <li><b>☕</b><div><strong>Café quentinho</strong><span>Um sorriso sincero logo na recepção.</span></div></li>
+    </ul>
+  </div>
+  <div class="phone">
+    <div class="phone__bar"><img src="assets/favicon.svg" alt=""><div><strong>We Clinic</strong><small>online agora</small></div></div>
+    <div class="phone__chat" id="chat">
+      <p class="msg msg--me">Oi! Tenho pavor de dentista 😅 mas preciso resolver um dente</p>
+      <p class="msg msg--we">Oi! Super normal, viu? Muita gente chega assim e sai rindo 😊</p>
+      <p class="msg msg--we">A primeira consulta é pra conversar e entender seu caso, sem pressa.</p>
+      <p class="msg msg--me">E dá pra parcelar?</p>
+      <p class="msg msg--we">Temos as melhores condições de pagamento da região 💳 Bora marcar?</p>
+      <p class="msg msg--me">Bora! 🙌</p>
+      <p class="msg msg--typing"><i></i><i></i><i></i></p>
+    </div>
+    <a href="#" data-wa="Oi! Tenho um pouco de medo de dentista, mas quero marcar uma avaliação 😅" class="phone__cta wa-link">Começar essa conversa de verdade 💬</a>
   </div>
 </section>
 
 <!-- TRATAMENTOS -->
 <section class="treat" id="tratamentos">
-  <div class="treat__head">
-    <p class="manifesto__label">04 — tratamentos</p>
-    <h2 class="section-title split">Tudo o que o seu sorriso<br>precisa, <em>num só lugar.</em></h2>
+  <div class="sec-head">
+    <span class="kicker">Tudo num lugar só</span>
+    <h2 class="sec-title split">Do <span class="hl2">check-up</span> ao sorriso novo.</h2>
   </div>
   <div class="treat__grid">
-    <article class="tcard"><div class="tcard__icon"><svg viewBox="0 0 64 64"><path d="M32 6c-8-3-18 0-18 11 0 7 4 10 5 17 1 6 2 14 6 14s3-9 7-12c4 3 3 12 7 12s5-8 6-14c1-7 5-10 5-17 0-11-10-14-18-11Z"/><path d="M28 50v8M36 50v8M26 58h12"/></svg></div><h3>Implantes dentários</h3><p>Dente fixo de volta, com planejamento digital e acompanhamento do início ao fim.</p><span class="tcard__n">01</span></article>
-    <article class="tcard"><div class="tcard__icon"><svg viewBox="0 0 64 64"><path d="M8 26c8-8 40-8 48 0"/><path d="M12 28v10c0 6 4 10 10 10h20c6 0 10-4 10-10V28"/><path d="M22 28v20M32 28v20M42 28v20"/></svg></div><h3>Reabilitação oral</h3><p>Devolvemos mastigação, fala e estética em casos complexos, com próteses e implantes.</p><span class="tcard__n">02</span></article>
-    <article class="tcard"><div class="tcard__icon"><svg viewBox="0 0 64 64"><path d="M10 34c10 10 34 10 44 0"/><path d="M16 36v10M26 39v12M38 39v12M48 36v10"/><circle cx="20" cy="20" r="4"/><circle cx="44" cy="20" r="4"/></svg></div><h3>Overdenture</h3><p>Prótese removível presa por implantes: firmeza e segurança para sorrir e comer.</p><span class="tcard__n">03</span></article>
-    <article class="tcard"><div class="tcard__icon"><svg viewBox="0 0 64 64"><path d="M32 6v8M32 50v8M6 32h8M50 32h8M13 13l6 6M45 45l6 6M51 13l-6 6M19 45l-6 6"/><circle cx="32" cy="32" r="10"/></svg></div><h3>Clareamento dental</h3><p>Consultório ou caseiro, com protocolos seguros e resultado que você vê na primeira semana.</p><span class="tcard__n">04</span></article>
-    <article class="tcard"><div class="tcard__icon"><svg viewBox="0 0 64 64"><path d="M8 30c0-6 10-10 24-10s24 4 24 10-10 14-24 14S8 36 8 30Z"/><path d="M14 30h36" stroke-dasharray="4 4"/></svg></div><h3>Alinhadores invisíveis</h3><p>Ortodontia discreta com especialista habilitada em alinhadores.</p><span class="tcard__n">05</span></article>
-    <article class="tcard"><div class="tcard__icon"><svg viewBox="0 0 64 64"><path d="M14 36c6-4 12-4 18 0 6-4 12-4 18 0-6 8-12 12-18 12s-12-4-18-12Z"/><path d="M14 36c6 2 12 2 18-1 6 3 12 3 18 1"/></svg></div><h3>Harmonização orofacial</h3><p>Preenchimento labial, bigode chinês e toxina botulínica com naturalidade.</p><span class="tcard__n">06</span></article>
-    <article class="tcard"><div class="tcard__icon"><svg viewBox="0 0 64 64"><circle cx="32" cy="24" r="12"/><path d="M26 26c3 3 9 3 12 0"/><circle cx="28" cy="21" r="1.5"/><circle cx="36" cy="21" r="1.5"/><path d="M16 56c2-10 8-16 16-16s14 6 16 16"/></svg></div><h3>Odontopediatria</h3><p>Primeiras consultas leves e acolhedoras, pra criança criar uma relação boa com o dentista.</p><span class="tcard__n">07</span></article>
-    <article class="tcard"><div class="tcard__icon"><svg viewBox="0 0 64 64"><path d="M20 10h24v6H20zM24 16v30l8 10 8-10V16"/><path d="M28 26h8M28 34h8"/></svg></div><h3>Endodontia e periodontia</h3><p>Canal e saúde da gengiva com especialistas mestres pela UFF e SLM.</p><span class="tcard__n">08</span></article>
+    <article class="tc" style="--bg:#ffe1cf"><span class="tc__e">🦷</span><h3>Implantes</h3><p>Dente fixo e natural no lugar do que faltava.</p></article>
+    <article class="tc" style="--bg:#f9d9e0"><span class="tc__e">✨</span><h3>Clareamento</h3><p>No consultório ou caseiro, com acompanhamento.</p></article>
+    <article class="tc" style="--bg:#e3ecdc"><span class="tc__e">😁</span><h3>Alinhadores invisíveis</h3><p>Dentes alinhados sem aparelho de ferro aparecendo.</p></article>
+    <article class="tc" style="--bg:#fbe8b8"><span class="tc__e">🙌</span><h3>Reabilitação oral</h3><p>Mastigar, falar e sorrir bem de novo.</p></article>
+    <article class="tc" style="--bg:#ecdff3"><span class="tc__e">💋</span><h3>Harmonização</h3><p>Preenchimento labial, bigode chinês e toxina botulínica.</p></article>
+    <article class="tc" style="--bg:#dcecef"><span class="tc__e">🧸</span><h3>Odontopediatria</h3><p>Consulta leve pra criança gostar de ir ao dentista.</p></article>
+    <article class="tc" style="--bg:#ffe1cf"><span class="tc__e">🔒</span><h3>Overdenture</h3><p>Prótese presa em implantes: firme pra comer e sorrir.</p></article>
+    <article class="tc" style="--bg:#f3e3d3"><span class="tc__e">💆</span><h3>Canal e gengiva</h3><p>Endodontia e periodontia com mestres e especialistas.</p></article>
   </div>
-</section>
-
-<!-- NUMEROS -->
-<section class="stats">
-  <div class="stat"><span class="stat__num" data-count="3192" data-prefix="+">0</span><span class="stat__label">sorrisos transformados</span></div>
-  <div class="stat"><span class="stat__num" data-count="10" data-prefix="+">0</span><span class="stat__label">profissionais qualificados</span></div>
-  <div class="stat"><span class="stat__num" data-count="5" data-suffix=",0">0</span><span class="stat__label">nota no Google</span></div>
-  <div class="stat"><span class="stat__num" data-count="4" data-prefix="+">0</span><span class="stat__label">anos no mercado</span></div>
 </section>
 
 <!-- EQUIPE -->
 <section class="team" id="equipe">
-  <div class="team__head">
-    <p class="manifesto__label">05 — nossa equipe</p>
-    <h2 class="section-title split">Especialistas que<br><em>cuidam de gente.</em></h2>
+  <div class="sec-head">
+    <span class="kicker">Prazer! 👋</span>
+    <h2 class="sec-title split">Quem vai <span class="hl2">cuidar</span> de você.</h2>
+    <p class="sec-sub">Especialistas formados na UFF, UERJ e pós-graduados nas melhores escolas do Rio.</p>
   </div>
-  <div class="team__grid">
-    <article class="doc doc--feature"><div class="doc__img"><img src="assets/equipe-nathale.webp" alt="Dra. Nathale Cruz" loading="lazy"></div><div class="doc__body"><span class="doc__area">Periodontia</span><h3>Dra. Nathale Cruz</h3><ul><li>Graduada em Odontologia pela UFF</li><li>Especialista em Periodontia pela UERJ</li><li>Mestre em Clínica Odontológica pela UFF</li></ul></div></article>
-    <article class="doc"><div class="doc__img"><img src="assets/equipe-guilherme.webp" alt="Dr. Guilherme Aguiar" loading="lazy"></div><div class="doc__body"><span class="doc__area">Prótese &amp; Implantes</span><h3>Dr. Guilherme Aguiar</h3><ul><li>Graduado em Odontologia pela UFF</li><li>Especialista em Prótese Dentária pela NEEO</li><li>Especialista em Implantodontia pela NEEO</li></ul></div></article>
-    <article class="doc"><div class="doc__img"><img src="assets/equipe-brennda.webp" alt="Dra. Brennda Knust" loading="lazy"></div><div class="doc__body"><span class="doc__area">Endodontia</span><h3>Dra. Brennda Knust</h3><ul><li>Graduada em Odontologia pela UFF</li><li>Especialista em Endodontia pela INCO 25</li></ul></div></article>
-    <article class="doc"><div class="doc__img"><img src="assets/equipe-lia.webp" alt="Dra. Lia Araujo" loading="lazy"></div><div class="doc__body"><span class="doc__area">Ortodontia</span><h3>Dra. Lia Araujo</h3><ul><li>Graduada em Odontologia pela UFF</li><li>Especialista em Ortodontia pela INCO 25</li><li>Habilitada em alinhadores pela EA</li></ul></div></article>
-    <article class="doc"><div class="doc__img"><img src="assets/equipe-ingrid.webp" alt="Dra. Ingrid Santiago" loading="lazy"></div><div class="doc__body"><span class="doc__area">Periodontia</span><h3>Dra. Ingrid Santiago</h3><ul><li>Graduada em Odontologia pela UERJ</li><li>Especialista em Periodontia pela UERJ</li><li>Atualizada em Cirurgia Bucomaxilofacial pelo CRO-RJ</li></ul></div></article>
-    <article class="doc"><div class="doc__img"><img src="assets/equipe-daiane.webp" alt="Dra. Daiane Pacheco" loading="lazy"></div><div class="doc__body"><span class="doc__area">Endodontia</span><h3>Dra. Daiane Pacheco</h3><ul><li>Graduada em Odontologia pelo CUVR</li><li>Especialista em Endodontia pela SLM</li><li>Mestrado em Endodontia pela SLM</li></ul></div></article>
-    <article class="doc"><div class="doc__img"><img src="assets/equipe-karina.webp" alt="Dra. Karina Fonseca" loading="lazy"></div><div class="doc__body"><span class="doc__area">Farmácia estética</span><h3>Dra. Karina Fonseca</h3><ul><li>Graduada em Farmácia pela UNIVERSO</li><li>Especialista em Farmácia Estética pelo ISEEC</li><li>Habilitação em Homeopatia e Prescrição clínica</li></ul></div></article>
+  <div class="team__row" id="teamRow">
+    <article class="mate"><div class="mate__ph"><img src="assets/equipe-nathale.webp" alt="Dra. Nathale Cruz" loading="lazy"></div><h3>Dra. Nathale</h3><p>Periodontia · Mestre UFF</p></article>
+    <article class="mate"><div class="mate__ph"><img src="assets/equipe-guilherme.webp" alt="Dr. Guilherme Aguiar" loading="lazy"></div><h3>Dr. Guilherme</h3><p>Prótese &amp; Implantes</p></article>
+    <article class="mate"><div class="mate__ph"><img src="assets/equipe-lia.webp" alt="Dra. Lia Araujo" loading="lazy"></div><h3>Dra. Lia</h3><p>Ortodontia &amp; Alinhadores</p></article>
+    <article class="mate"><div class="mate__ph"><img src="assets/equipe-ingrid.webp" alt="Dra. Ingrid Santiago" loading="lazy"></div><h3>Dra. Ingrid</h3><p>Periodontia · Cirurgia</p></article>
+    <article class="mate"><div class="mate__ph"><img src="assets/equipe-brennda.webp" alt="Dra. Brennda Knust" loading="lazy"></div><h3>Dra. Brennda</h3><p>Endodontia</p></article>
+    <article class="mate"><div class="mate__ph"><img src="assets/equipe-daiane.webp" alt="Dra. Daiane Pacheco" loading="lazy"></div><h3>Dra. Daiane</h3><p>Endodontia · Mestre SLM</p></article>
+    <article class="mate"><div class="mate__ph"><img src="assets/equipe-karina.webp" alt="Dra. Karina Fonseca" loading="lazy"></div><h3>Dra. Karina</h3><p>Farmácia estética</p></article>
   </div>
-</section>
-
-<!-- CLINICA -->
-<section class="clinic" id="clinica">
-  <div class="clinic__img"><div class="clinic__mask"><img src="assets/clinica-recepcao.webp" alt="Recepção da We Clinic" loading="lazy"></div><span class="clinic__tag">recepção · São Gonçalo</span></div>
-  <div class="clinic__copy">
-    <p class="manifesto__label">06 — a clínica</p>
-    <h2 class="section-title split">Um espaço feito pra você <em>respirar fundo.</em></h2>
-    <p>Na We Clinic, cada paciente é tratado de forma única. Nosso compromisso é oferecer atendimento personalizado e uma variedade de tratamentos para as suas necessidades — com as melhores condições de pagamento da região.</p>
-    <ul class="clinic__list">
-      <li>Implantes dentários</li><li>Reabilitação oral</li><li>Overdenture</li><li>Clareamento (consultório e caseiro)</li><li>Aparelhos invisíveis</li><li>E muito mais</li>
-    </ul>
-  </div>
+  <p class="team__hint">continua rolando que a equipe vem junto 👉</p>
 </section>
 
 <!-- AVALIACOES -->
 <section class="reviews" id="avaliacoes">
-  <div class="reviews__head">
-    <div class="reviews__score"><span class="reviews__big">5,0</span><div><div class="reviews__stars">★★★★★</div><p>nota média no Google</p></div></div>
-    <h2 class="section-title split">Quem vem,<br><em>indica.</em></h2>
+  <div class="reviews__score">
+    <span class="reviews__num" data-count="5">0</span>
+    <div><div class="stars">★★★★★</div><p>nota no Google</p></div>
   </div>
-  <div class="reviews__rail">
-    <div class="reviews__track">
-      <blockquote class="rev"><div class="rev__stars">★★★★★</div><p>“Excelente atendimento, os profissionais são perfeitos. Desde a recepção até as Doutoras. Fui muito bem tratado, e farei todo o meu tratamento na clínica.”</p><cite><i>W</i>Wesllyn Oliveira · Google</cite></blockquote>
-      <blockquote class="rev"><div class="rev__stars">★★★★★</div><p>“Se tivesse como dar 10 estrelas eu daria. Uma equipe excepcional. Super indico, fiz meu tratamento super rápido. E com qualidade ❤️”</p><cite><i>A</i>anja mix Mix · Google</cite></blockquote>
-      <blockquote class="rev"><div class="rev__stars">★★★★★</div><p>“Minha experiência foi a melhor possível. Sempre tive muito medo de dentista, cheguei muito nervoso e me trataram da melhor forma possível…”</p><cite><i>R</i>Renato Marins · Google</cite></blockquote>
-      <blockquote class="rev"><div class="rev__stars">★★★★★</div><p>“Profissionais capacitados e focados no paciente, a clínica é super aconchegante e confortável!!! O atendimento é excelente…”</p><cite><i>D</i>Denise Rocha · Google</cite></blockquote>
+  <h2 class="sec-title split">Não é a gente que tá <span class="hl2">dizendo</span>…</h2>
+  <div class="reviews__grid">
+    <blockquote class="rv" style="--r:-3deg"><div class="stars">★★★★★</div><p>“Se tivesse como dar 10 estrelas eu daria. Uma equipe excepcional. Super indico, fiz meu tratamento super rápido. E com qualidade ❤️”</p><cite><i style="--c:#e8a27c">A</i>anja mix Mix</cite></blockquote>
+    <blockquote class="rv" style="--r:2deg"><div class="stars">★★★★★</div><p>“Excelente atendimento, os profissionais são perfeitos. Desde a recepção até as Doutoras. Fui muito bem tratado, e farei todo o meu tratamento na clínica.”</p><cite><i style="--c:#c1774c">W</i>Wesllyn Oliveira</cite></blockquote>
+    <blockquote class="rv" style="--r:-1.5deg"><div class="stars">★★★★★</div><p>“Profissionais capacitados e focados no paciente, a clínica é super aconchegante e confortável!!! O atendimento é excelente…”</p><cite><i style="--c:#d9a441">D</i>Denise Rocha</cite></blockquote>
+    <blockquote class="rv" style="--r:2.5deg"><div class="stars">★★★★★</div><p>“Minha experiência foi a melhor possível. Sempre tive muito medo de dentista, cheguei muito nervoso e me trataram da melhor forma possível…”</p><cite><i style="--c:#7a5446">R</i>Renato Marins</cite></blockquote>
+  </div>
+</section>
+
+<!-- CLINICA -->
+<section class="visit" id="clinica">
+  <div class="visit__img"><img src="assets/clinica-recepcao.webp" alt="Recepção da We Clinic" loading="lazy"><span class="sticker sticker--v">☕ o café tá pronto</span></div>
+  <div class="visit__copy">
+    <span class="kicker">Vem conhecer</span>
+    <h2 class="sec-title split">Te esperamos com um <span class="hl2">sorriso sincero</span>.</h2>
+    <ul class="visit__info">
+      <li><b>📍</b><span>Rua Comandante Ari Parreira, 2169, loja 4<br>Paraíso, São Gonçalo · RJ</span></li>
+      <li><b>🕘</b><span>Seg a sex · 9h às 18h<br>Sábado · 9h às 13h</span></li>
+      <li><b>📞</b><span><a href="tel:+5521997274701">(21) 99727-4701</a> · <a href="tel:+5521997274741">(21) 99727-4741</a></span></li>
+      <li><b>📸</b><span><a href="https://www.instagram.com/weclinics/" target="_blank" rel="noopener">@weclinics</a> no Instagram</span></li>
+    </ul>
+    <div class="visit__ctas">
+      <a href="#" data-wa="Olá! Vim pelo site e quero agendar uma visita 😊" class="btn btn--brand magnetic wa-link confetti"><span>Agendar pelo WhatsApp</span><b>💬</b></a>
+      <a href="https://www.google.com/maps/search/?api=1&query=Rua+Comandante+Ari+Parreira+2169+S%C3%A3o+Gon%C3%A7alo+RJ" target="_blank" rel="noopener" class="btn btn--line"><span>Abrir no mapa</span><b>📍</b></a>
     </div>
   </div>
 </section>
 
-<!-- CTA / LOCAL -->
-<section class="cta" id="agendar">
-  <div class="cta__inner">
-    <p class="manifesto__label">07 — venha nos visitar</p>
-    <h2 class="cta__title split">Seu próximo sorriso<br><em>começa com um oi.</em></h2>
-    <a href="https://wa.me/5521997274701?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o" target="_blank" rel="noopener" class="cta__big magnetic" data-cursor="WhatsApp">
-      <span>Agendar pelo WhatsApp</span>
-      <svg viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-    </a>
+<!-- FAQ -->
+<section class="faq" id="duvidas">
+  <div class="sec-head">
+    <span class="kicker">Perguntas que todo mundo faz</span>
+    <h2 class="sec-title split">Dúvidas? <span class="hl2">Relaxa.</span></h2>
   </div>
-  <div class="local">
-    <div class="local__info">
-      <div><h4>Endereço</h4><p>Rua Comandante Ari Parreira, 2169, loja 4<br>Paraíso, São Gonçalo · RJ</p></div>
-      <div><h4>Contatos</h4><p><a href="tel:+5521997274701">(21) 99727-4701</a><br><a href="tel:+5521997274741">(21) 99727-4741</a></p></div>
-      <div><h4>Horários</h4><p>Segunda a sexta · 9h às 18h<br>Sábado · 9h às 13h</p></div>
-      <div><h4>Instagram</h4><p><a href="https://www.instagram.com/weclinics/" target="_blank" rel="noopener">@weclinics</a></p></div>
-    </div>
-    <div class="local__map">
-      <iframe title="Mapa We Clinic" loading="lazy" src="https://maps.google.com/maps?q=Rua%20Comandante%20Ari%20Parreira%2C%202169%2C%20S%C3%A3o%20Gon%C3%A7alo%20RJ&z=16&output=embed"></iframe>
-    </div>
+  <div class="faq__list">
+    <details><summary>Como funciona a primeira consulta?<i>+</i></summary><p>É uma avaliação com especialista: a gente conversa, examina e explica as opções pro seu caso. Você sai sabendo qual é o próximo passo.</p></details>
+    <details><summary>Dá pra parcelar o tratamento?<i>+</i></summary><p>Sim! A We tem as melhores condições de pagamento da região. Chama no WhatsApp que a equipe te passa as opções certinhas pro seu tratamento.</p></details>
+    <details><summary>Implante dói?<i>+</i></summary><p>O procedimento é feito com anestesia e planejamento cuidadoso. A equipe explica cada etapa e orienta você no pós para uma recuperação tranquila.</p></details>
+    <details><summary>Clareamento deixa os dentes sensíveis?<i>+</i></summary><p>Pode haver sensibilidade passageira em algumas pessoas. Por isso o clareamento é feito com acompanhamento, seja no consultório ou com o kit caseiro.</p></details>
+    <details><summary>Vocês atendem crianças?<i>+</i></summary><p>Atendemos! Na odontopediatria a ideia é que a criança se sinta segura e crie uma relação boa com o dentista desde cedo.</p></details>
+    <details><summary>Tenho muito medo de dentista. E aí?<i>+</i></summary><p>Você não é o único 😊 Conta isso pra gente quando marcar: a equipe adapta o ritmo, explica tudo antes e faz pausas sempre que você precisar.</p></details>
   </div>
+</section>
+
+<!-- FINAL CTA -->
+<section class="final">
+  <div class="final__blob"></div>
+  <h2 class="final__title split">Bora sorrir <span class="hl2">sem esconder</span> a boca?</h2>
+  <a href="#" data-wa="Olá! Vim pelo site e quero agendar minha avaliação 😊" class="final__btn magnetic wa-link confetti"><span>Agendar minha avaliação</span><b>💬</b></a>
+  <p class="final__small">Resposta rápida no WhatsApp · (21) 99727-4701</p>
+  <span class="floaty f1">🦷</span><span class="floaty f2">✨</span><span class="floaty f3">😁</span><span class="floaty f4">💋</span><span class="floaty f5">⭐</span>
 </section>
 
 </main>
 
 <footer class="footer">
-  <div class="footer__giant" aria-hidden="true">We Clinic</div>
-  <div class="footer__row">
-    <img src="assets/logo2.png" alt="We Clinic">
-    <p>Aqui, seu sorriso está em boas mãos.</p>
-    <p class="footer__small">© 2026 We Clinic · São Gonçalo/RJ<br><span>Protótipo conceitual de redesign</span></p>
-  </div>
+  <img src="assets/logo-dark.png" alt="We Clinic">
+  <p>Aqui, seu sorriso está em boas mãos. 🤍</p>
+  <p class="footer__small">© 2026 We Clinic · São Gonçalo/RJ · <span>Protótipo conceitual de redesign</span></p>
 </footer>
 
-<a class="wa-float" href="https://wa.me/5521997274701?text=Ol%C3%A1%2C%20vim%20do%20site%20e%20gostaria%20de%20saber%20sobre..." target="_blank" rel="noopener" aria-label="WhatsApp">
+<div class="mbar"><a href="#" data-wa="Olá! Vim pelo site e quero agendar uma avaliação 😊" class="wa-link">💬 Agendar no WhatsApp</a></div>
+<a class="wa-float wa-link" href="#" data-wa="Olá! Vim pelo site e gostaria de saber sobre…" aria-label="WhatsApp">
   <svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3Zm0 23.6c-2 0-4-.6-5.7-1.6l-.4-.2-3.9 1 1-3.8-.3-.4A10.6 10.6 0 1 1 16 26.6Zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.5.3-.5.9-1.6.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4s-1.2 1.1-1.2 2.8 1.2 3.2 1.4 3.5 2.4 3.7 5.8 5.1c2.2.9 3 1 4.1.8.7-.1 1.9-.8 2.2-1.5s.3-1.4.2-1.5-.3-.2-.6-.4Z"/></svg>
+  <span class="wa-float__bubble">Oi! Posso te ajudar? 😊</span>
 </a>
+<canvas id="confetti" class="confetti-canvas"></canvas>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
