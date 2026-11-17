@@ -76,6 +76,8 @@
     gsap.timeline().to(cmp, { opacity: 0, scale: .97, duration: .2 }).add(swap).to(cmp, { opacity: 1, scale: 1, duration: .5, ease: 'back.out(1.6)' })
       .fromTo({ v: 15 }, { v: 15 }, { v: 50, duration: 1, ease: 'power3.out', onUpdate() { setPos(this.targets()[0].v); } });
   }));
+  const fitCmp = () => { const im = $('cmpAfter'); if (!im.naturalWidth) return; const ar = im.naturalWidth / im.naturalHeight; cmp.style.aspectRatio = ar; cmp.style.maxWidth = `min(100%, calc(72vh * ${ar.toFixed(3)}))`; };
+  $('cmpAfter').addEventListener('load', fitCmp); fitCmp();
   setPos(50);
 
   /* ---------- no GSAP fallback ---------- */
@@ -168,12 +170,12 @@
   gsap.from('.bigquote', { scale: .8, opacity: 0, duration: .8, ease: 'back.out(2)', scrollTrigger: { trigger: '.bigquote', start: 'top 88%' } });
 
   /* treatment cards */
-  gsap.from('.tc', { y: 90, rotate: () => gsap.utils.random(-6, 6), opacity: 0, duration: .9, stagger: .07, ease: 'back.out(1.7)', scrollTrigger: { trigger: '.treat__grid', start: 'top 85%' } });
+  gsap.fromTo('.tc', { y: 90, rotate: () => gsap.utils.random(-6, 6), opacity: 0 }, { y: 0, rotate: 0, opacity: 1, duration: .9, stagger: .07, ease: 'back.out(1.7)', clearProps: 'transform', scrollTrigger: { trigger: '.treat__grid', start: 'top 85%' } });
 
   /* team row scroll-scrub */
   const row = $('teamRow');
   gsap.fromTo(row, { x: () => innerWidth * .15 }, { x: () => -(row.scrollWidth - innerWidth * .85), ease: 'none', scrollTrigger: { trigger: '.team', start: 'top bottom', end: 'bottom top', scrub: 1, invalidateOnRefresh: true } });
-  gsap.from('.mate__ph', { scale: 0, rotate: -30, duration: .9, stagger: .07, ease: 'back.out(2)', scrollTrigger: { trigger: '.team', start: 'top 70%' } });
+  gsap.fromTo('.mate', { scale: 0, rotate: -20 }, { scale: 1, rotate: 0, duration: .9, stagger: .07, ease: 'back.out(2)', scrollTrigger: { trigger: '.team', start: 'top 70%' } });
 
   /* reviews */
   const num = document.querySelector('.reviews__num'), o5 = { v: 0 };
